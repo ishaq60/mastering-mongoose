@@ -22,9 +22,9 @@ export const noteRoutes=express.Router()
     note:note
  })
 })
-noteRoutes.get("",async(req:Request,res:Response)=>{
+noteRoutes.get("/",async(req:Request,res:Response)=>{
   
-  const notes=await Note.find()
+  const notes=await Note.find().populate("userId")
  
  
  res.status(201).json({
