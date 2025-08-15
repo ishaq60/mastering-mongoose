@@ -3,10 +3,10 @@ import express, { Request, Response } from 'express';
 import { Note } from '../models/notes.model';
 
 
-
 export const noteRoutes=express.Router()
  noteRoutes.post("/create-note",async(req:Request,res:Response)=>{
     const body=req.body
+   
     //  noteRoutesroch =1 of creating a data
 //  const myNote=new Note({
 //     title:"Express",

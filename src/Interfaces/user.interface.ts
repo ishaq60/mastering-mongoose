@@ -6,3 +6,6 @@ export interface IUser{
     password:string,
     role:"user"|"admin"
 }
+export interface UserIntanceMethods{
+    hashPassword(password:string):string
+}
