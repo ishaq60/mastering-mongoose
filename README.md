@@ -48,9 +48,7 @@ project/
 ├── services/ # Business logic
 ├── index.js # App entry point
 
-markdown
-Copy
-Edit
+
 
 ### 💡 TypeScript Integration
 - Use interfaces for schema types.
